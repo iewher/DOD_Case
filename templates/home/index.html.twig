@@ -3,43 +3,35 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <div class='page'>
-        <div class='page-header'>
-            <h1>
-                DOD_Case
-            </h1>
-            <p>
-                Интернет магазин кроссовок
-            </p>
-        </div>
-        <div class='page-body'>
-            <div class='page-body__posters'>
-                <div class='poster'>
-                    <p>
-                        Фотография
-                    </p>
-                </div>
-                <div class='poster'>
-                    <p>
-                        Фотография
-                    </p>
-                </div>
-                <div class='poster'>
-                    <p>
-                        Фотография
-                    </p>
-                </div>
-                <div class='poster'>
-                    <p>
-                        Фотография
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class='page-footer'>
-            <h1>
-                footer
-            </h1>
-        </div>
-    </div>
+	<div class='page'>
+		<div class='page-header'>
+			<h1>
+				DOD_Case
+			</h1>
+			<p>
+				Интернет магазин кроссовок
+			</p>
+		</div>
+		<div class='page-body'>
+			<div class='page-body__posters'>
+            {% for poster in posters %}
+				<div class='poster'>
+					<img src="{{ asset(poster) }}" alt="{{poster}}"/>
+				</div>
+                {% endfor %}
+			</div>
+			<p>
+				Посмотри и выбери сам
+			</p>
+			<div class='page-body__cards'>
+				{% for card in cards %}
+					<div class='card'>
+						<img src="{{ asset(card.image) }}" alt="{{ card.title }}"/>
+						<p class='card-title'>{{ card.title }}</p>
+						<h2 class='card-price'>{{ card.price }}</h2>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 {% endblock %}
