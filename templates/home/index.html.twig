@@ -14,11 +14,11 @@
 		</div>
 		<div class='page-body'>
 			<div class='page-body__posters'>
-            {% for poster in posters %}
-				<div class='poster'>
-					<img src="{{ asset(poster) }}" alt="{{poster}}"/>
-				</div>
-                {% endfor %}
+				{% for poster in posters %}
+					<div class='poster'>
+						<img src="{{ asset(poster) }}" alt="{{poster}}"/>
+					</div>
+				{% endfor %}
 			</div>
 			<p>
 				Посмотри и выбери сам
@@ -32,6 +32,10 @@
 					</div>
 				{% endfor %}
 			</div>
+		</div>
+		<div class='page-footer'>
+			<p>© 2023 Магазин DOD_Case</p>
+            <a href='https://github.com/iewher/DOD_Case'>GitHub</a>
 		</div>
 	</div>
 {% endblock %}

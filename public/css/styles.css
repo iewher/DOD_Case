@@ -16,9 +16,11 @@ body {
     width: 1280px;
 }
 
-.page-header {
+.page-header, .page-footer {
     padding: 15px 0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+    margin-bottom: 20px;
+    border-radius: 7px;
 
     h1 {
         font-size: 35px;
@@ -30,8 +32,8 @@ body {
 }
 
 .page-body {
-    height: auto;
-    margin-top: 20px;
+    margin: 35px 0;
+    height: fit-content;
 
     .page-body__posters {
         display: grid;
@@ -39,7 +41,6 @@ body {
         grid-template-columns: repeat(3, 1fr);
 
         .poster {
-            border-radius: 7px;
             height: 222px;
             display: flex;
             justify-content: center;
@@ -47,6 +48,7 @@ body {
             transition: .3s;
 
             img {
+                border-radius: 7px;
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -78,7 +80,6 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
-        margin-bottom: 20px;
 
         .card {
             height: 367px;
@@ -101,5 +102,11 @@ body {
 }
 
 .page-footer {
-    display: flex;
+    margin-bottom: 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 4px rgba(0, 0, 0, .05);
+
+    a {
+        color: black;
+    }
 }
