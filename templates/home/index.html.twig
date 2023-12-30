@@ -14,11 +14,11 @@
 		</div>
 		<div class='page-body'>
 			<div class='page-body__posters'>
-				{# {% for poster in posters %}
+				{% for poster in posters %}
 					<div class='poster'>
-						<img src="{{ asset(poster) }}" alt="{{poster}}"/>
+						<img src="{{ asset(poster.image) }}" alt="{{poster.image}}"/>
 					</div>
-				{% endfor %} #}
+				{% endfor %}
 			</div>
 			<p>
 				Посмотри и выбери сам

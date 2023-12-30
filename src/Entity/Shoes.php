@@ -27,7 +27,7 @@ class Shoes
         return $this->id;
     }
 
-    public function getTitle(): ?string  
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -37,7 +37,7 @@ class Shoes
         return $this->price;
     }
 
-    public function getImage(): ?string  
+    public function getImage(): ?string
     {
         return $this->image;
     }
