@@ -16,7 +16,8 @@ body {
     width: 1280px;
 }
 
-.page-header, .page-footer {
+.page-header,
+.page-footer {
     padding: 15px 0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .05);
     margin-bottom: 20px;
@@ -103,7 +104,7 @@ body {
 
 .page-footer {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 40px;
     box-shadow: 0 -4px 4px rgba(0, 0, 0, .05);
 
     a {
