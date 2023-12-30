@@ -32,6 +32,12 @@ body {
     }
 }
 
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .page-body {
     margin: 35px 0;
     height: fit-content;
