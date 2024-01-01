@@ -47,7 +47,13 @@
     symfony server:start
     ```
 
-7. Открыть веб-браузер и перейти по адресу [http://localhost:8000](http://localhost:8000)
+7. Запустить базу данных:
+
+    ```bash
+    sudo docker-compose up
+    ```
+
+8. Открыть веб-браузер и перейти по адресу [http://localhost:8000](http://localhost:8000)
 
 ## Планы на будущее
 

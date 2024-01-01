@@ -13,12 +13,22 @@
 					Интернет магазин кроссовок
 				</p>
 			</div>
+			<div class='page-header__user'>
+				<form>
+					<input type="text" name="username" placeholder="Имя пользователя">
+					<input type="email" name="email" placeholder="Email">
+					<button type="submit">Добавить пользователя</button>
+				</form>
+			</div>
 		</div>
 		<div class='page-body'>
+			<p>
+				Отличная подборка
+			</p>
 			<div class='page-body__posters'>
 				{% for poster in posters %}
 					<div class='poster'>
-						<img src="{{ asset(poster.image) }}" alt="{{poster.image}}"/>
+						<img src="{{ poster.image }}" alt="{{poster.image}}"/>
 					</div>
 				{% endfor %}
 			</div>
@@ -28,9 +38,10 @@
 			<div class='page-body__cards'>
 				{% for product in products %}
 					<div class='card'>
-						<img src="{{ asset(product.image) }}" alt="{{ product.title }}"/>
+						<img src="{{ product.image }}" alt="{{ product.title }}"/>
 						<p class='card-title'>{{ product.title }}</p>
-						<h2 class='card-price'>{{ product.price }}</h2>
+						<h2 class='card-price'>{{ product.price }}
+							₽</h2>
 					</div>
 				{% endfor %}
 			</div>

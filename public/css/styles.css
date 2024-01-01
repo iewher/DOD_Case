@@ -36,6 +36,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .page-header__logo,
+    .page-header__user {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-header__user {
+        gap: 5px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input {
+                height: 25px;
+                text-indent: 5px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+
 }
 
 .page-body {
