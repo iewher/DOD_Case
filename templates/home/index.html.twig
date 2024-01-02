@@ -14,9 +14,9 @@
 				</p>
 			</div>
 			<div class='page-header__user'>
-				<form>
-					<input type="text" name="username" placeholder="Имя пользователя">
-					<input type="email" name="email" placeholder="Email">
+				<form method="post" action="{{ path('create_user') }}">
+					<input type="login" name="login" placeholder="login">
+					<input type="password" name="password" placeholder="Password">
 					<button type="submit">Добавить пользователя</button>
 				</form>
 			</div>

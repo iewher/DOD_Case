@@ -14,7 +14,7 @@ class User
     #[ORM\Column(type: 'integer')]
     private ?int $id = null;
 
-    #[ORM\Column(type: 'string', length: 255)]
+    #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private ?string $login = null;
 
     #[ORM\Column(type: 'string', length: 255)]
